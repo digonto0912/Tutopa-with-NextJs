@@ -1,0 +1,140 @@
+/* NavBar */
+.navbar {
+  height: 96px;
+  align-content: center;
+  background-color: white;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-logo-image {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+.navbar-menu {
+  align-content: center;
+}
+
+.bg-black {
+  background: #0000009c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+
+.btn-outline-light {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(223, 223, 223);
+}
+
+.btn-icon {
+  width: 44px;
+  padding: 0;
+}
+
+.navbar-menu-close-icon,
+.navbar-menu-toggle-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.navbar-menu-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.navbar-menu-list-item {
+  list-style-type: none;
+}
+
+.navbar-menu-list-item a {
+  color: rgb(88, 88, 88);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: #f7f7f7;
+  color: #ec5c2a !important;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+}
+
+.btn-secondary:hover {
+  color: #f7f7f7 !important;
+  background-color: #ec5c2a !important;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+}
+
+.navbar-menu-close {
+  display: none;
+}
+
+.navbar-menu-toggle {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+  /* navbar */
+  .navbar {
+    height: 72px;
+  }
+
+  .bg-black.active {
+    display: block;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    background: #ffffff;
+    bottom: 0;
+    z-index: 3;
+    align-items: normal;
+    top: 0;
+    left: -350px;
+    width: 300px;
+    padding: 20px;
+    align-content: flex-start;
+    padding-top: 35px;
+    transition-timing-function: linear;
+    transition: 0.3s
+  }
+
+  .navbar-menu.active {
+    left: 0;
+    transition: 0.3s
+  }
+
+  .navbar-menu-list {
+    flex-direction: column;
+    align-items: normal;
+    gap: 16px;
+  }
+
+  .navbar-menu-close {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background: none;
+    border: none;
+  }
+
+  .navbar-menu-toggle {
+    display: flex;
+  }
+}

@@ -1,0 +1,108 @@
+/* 4 Cards */
+
+.reason-section {
+  padding: 128px 0 64px;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0 auto 8px;
+  max-width: 940px;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+  color: #4b4444;
+}
+
+.reason-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.reason-item {
+  padding: 48px 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.reason-item:nth-child(1) {
+  background-color: #fcf5fb;
+}
+
+.reason-item:nth-child(2) {
+  background-color: #f5fbfe;
+}
+
+.reason-item:nth-child(3) {
+  background-color: #fdfaeb;
+}
+
+.reason-item:nth-child(4) {
+  background-color: #f7fcf5;
+}
+
+.reason-item-icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto 36px;
+}
+
+.reason-item-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.reason-item-description {
+  line-height: 1.5;
+  color: #4b4444;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .reason-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .reason-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

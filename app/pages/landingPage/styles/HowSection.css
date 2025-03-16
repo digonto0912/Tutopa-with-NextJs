@@ -1,0 +1,191 @@
+.how-section {
+    padding: 64px 0;
+}
+
+.how-wrapper {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+
+.how-image-text {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.how-wrapper:nth-child(1) .how-image-text {
+    top: 32px;
+    left: 32px;
+    transform: rotateZ(-30deg);
+    position: absolute;
+    font-family: "Just Me Again Down Here", cursive;
+}
+
+.how-wrapper:nth-child(1) span {
+    color: #ec5c2a;
+    font-family: "Just Me Again Down Here", cursive;
+}
+
+.how-wrapper:nth-child(1) .how-image-wrapper {
+    background-color: #f3f6f5;
+}
+
+.how-image-wrapper {
+    position: relative;
+    height: 95%;
+    overflow: hidden;
+    min-height: 440px;
+    border-radius: 8px;
+}
+
+.how-image-wrapper img {
+    z-index: 1;
+    position: absolute;
+    width: 46%;
+    justify-self: anchor-center;
+    top: 48px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(0) translateY(64px);
+    transition-duration: 0.3s;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+
+.how-image-wrapper img.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0) translateY(0);
+}
+
+.ball-bg {
+    width: calc(100% - 65px);
+    border-radius: 10000px;
+    background: #d9e8ff;
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    bottom: -42%;
+    justify-self: anchor-center;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+
+.how-item {
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.how-item-toggle {
+    display: block;
+    width: 100%;
+    padding: 24px;
+    cursor: pointer;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+}
+
+.how-item-body {
+    color: #4b4444;
+    padding: 0 24px;
+    display: grid;
+    grid-template-rows: 0;
+    transition-duration: 0.3s;
+}
+
+.how-item-body p {
+    margin-bottom: 32px;
+}
+
+.how-item.active .how-item-body {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.how-item.active {
+    background-color: white;
+}
+
+
+/* 2nd one */
+
+.how-wrapper:nth-child(2) .how-image-wrapper {
+    background-color: #fdfaeb;
+}
+
+.ball-bg-2 {
+    width: calc(100% - 65px);
+    border-radius: 10000px;
+    background: #fdf1a2;
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    bottom: -42%;
+    justify-self: anchor-center;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+
+.how-wrapper:nth-child(2) .how-image-text {
+    top: 32px;
+    right: 32px;
+    transform: rotateZ(30deg);
+    position: absolute;
+    font-family: "Just Me Again Down Here", cursive;
+
+}
+
+.how-wrapper:nth-child(2) span {
+    color: #ec5c2a;
+    font-family: "Just Me Again Down Here", cursive;
+}
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .how-image-wrapper img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .how-image-wrapper img {
+        width: 77%;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .how-wrapper {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .how-image-wrapper img {
+        width: 240px;
+    }
+
+    .secOne {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

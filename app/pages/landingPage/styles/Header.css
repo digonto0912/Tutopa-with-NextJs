@@ -1,0 +1,207 @@
+.hero-section {
+    padding: 20px 0 0;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    text-transform: uppercase;
+    max-width: 940px;
+    margin: 0 auto 12px;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.hero-description {
+    max-width: 720px;
+    margin: 0 auto 32px;
+    text-align: center;
+    color: #4b4444;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.hero-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+    gap: 24px;
+}
+
+.hero-cta-item-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-image-item-image {
+    width: 100%;
+}
+
+.hero-image-item {
+    width: 100%;
+}
+
+.hero-image-item:last-child {
+    margin-top: 64px;
+    margin-left: 44px;
+}
+
+.hero-image-type {
+    position: absolute;
+}
+
+.hero-image-type-left {
+    right: calc(100% + 16px);
+    transform: rotateZ(-30deg);
+    bottom: calc(100% - 48px);
+}
+
+.hero-image-type-text {
+    font-family: "Just Me Again Down Here", cursive;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.hero-image-type-text>span {
+    font-family: "Just Me Again Down Here", cursive;
+    color: #ec5c2a;
+}
+
+.hero-image-type-arrow {
+    width: 80px;
+    transform: rotateZ(30deg);
+}
+
+.hero-image-type-right {
+    left: calc(100% + 8px);
+    transform: rotateZ(30deg);
+    bottom: calc(100% - 96px);
+}
+
+.hero-image-type-right .hero-image-type-arrow {
+    transform: rotateY(180deg) rotateZ(30deg);
+}
+
+/* left balls */
+
+.hero-decoration-left {
+    position: absolute;
+    top: 42px;
+    left: -300px;
+    z-index: -1;
+}
+
+.hero-decoration-left .hero-decoration {
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    border-radius: 9999px;
+}
+
+.hero-decoration-left .top {
+    background-color: #f5fbfe;
+
+}
+
+.hero-decoration-left .bottom {
+    background-color: #fcf5fb;
+    position: absolute;
+    bottom: -244px;
+    left: 0;
+}
+
+/* right balls */
+.hero-decoration-right {
+    position: absolute;
+    top: 42px;
+    right: -300px;
+    z-index: -1;
+}
+
+.hero-decoration-right .hero-decoration {
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    border-radius: 9999px;
+}
+
+.hero-decoration-right .top {
+    background-color: #fcf5fb;
+}
+
+.hero-decoration-right .bottom {
+    background-color: #f5fbfe;
+    position: absolute;
+    bottom: -244px;
+    left: 0;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .hero-image {
+        height: 300px;
+    }
+
+    .hero-image-wrapper {
+        max-width: 360px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-image-type {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero-image {
+        height: 250px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
